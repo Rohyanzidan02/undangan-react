@@ -1,0 +1,40 @@
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .mynavbar .navbar-brand, 
+    .mynavbar .offcanvas-title {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .mynavbar .nav-link {
+        font-size: 1.2rem; /* Adjust nav link font size */
+        padding: 10px 15px; /* Add padding for touch targets */
+    }
+
+    .mynavbar .offcanvas-body {
+        padding: 20px; /* Add padding to the offcanvas body */
+    }
+
+    .mynavbar .navbar-toggler {
+        padding: 0.5rem; /* Adjust padding for the toggler button */
+    }
+}

@@ -1,0 +1,59 @@
+.home {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+
+.home h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem ;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home .couple h3 {
+    font-family: 'Sacramento';
+    font-size: 2.4rem;
+    color: var(--pink);
+}
+
+.home .couple img {
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5 px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    
+}
+
+.home .heart i {
+    margin: auto;
+    color: var(--pink);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 576px) {
+    .home .heart {
+        display: none; /* Hide the heart icon on small screens */
+    }
+}

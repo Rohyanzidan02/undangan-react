@@ -1,0 +1,123 @@
+/* Bg.css */
+
+
+/* Hero class styles */
+.hero {
+    position: relative; /* Allows positioning of the ::before pseudo-element */
+    min-height: 100vh; /* Sets the minimum height to full viewport height */
+}
+
+/* Text styles for headings and paragraphs */
+.hero h1, .hero h4, .hero p {
+    text-shadow: var(--shadow); /* Applies a text shadow defined in your CSS variables */
+    color: white; /* Pastikan teks terlihat di atas latar belakang */
+}
+
+.hero h1 {
+    font-family: 'Sacramento', cursive; /* Custom font for the main heading */
+    font-size: 4rem; /* Font size for the main heading */
+    color: #ff69b4;
+}
+
+.hero h4 {
+    font-size: 1.6rem; /* Font size for the subheading */
+}
+
+.hero p {
+    font-size: 1.4rem; /* Font size for the paragraph */
+}
+
+/* Button styles */
+.hero a {
+    color: var(--pink); /* Text color for the button */
+    background-color: white; /* Background color for the button */
+    font-size: 2rem;
+}
+
+.hero a:hover {
+    background-color: var(--pink); /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* time */
+/* Time styles */
+.waktu {
+    text-align: center; /* Center text */
+    font-size: 40px; /* Larger font size */
+    color: #ffffff; /* White text color */
+    margin: 20px 0; /* Margin top and bottom */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+    position: relative; /* Position for pseudo-elements */
+}
+
+.waktu h2 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Position for pseudo-elements */
+    padding: 20px; /* Add padding for heart shape */
+    background-color: rgba(241, 43, 136, 0.336); /* Semi-transparent background */
+    border-radius: 90px; /* Rounded corners for the heart */
+}
+
+/* Heart shape using pseudo-elements */
+.waktu h2::before,
+.waktu h2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50px; /* Width of the heart lobes */
+    height: 50px; /* Height of the heart lobes */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    border-radius: 50%; /* Make it round */
+    z-index: -1; /* Behind the text */
+}
+
+.waktu h2::before {
+    left: 25px; /* Position the left lobe */
+}
+
+.waktu h2::after {
+    right: 25px; /* Position the right lobe */
+}
+
+.waktu h2 span {
+    margin: 0 5px; /* Space between elements */
+    padding: 10px 15px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect behind */
+    border: 2px solid white; /* White border */
+    transition: transform 0.3s, background-color 0.3s; /* Transition for hover effects */
+    font-weight: bold; /* Bold text */
+}
+
+/* Hover effect for spans */
+.waktu h2 span:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    background-color: var(--pink); /* Change background on hover */
+}
+
+
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Media Queries for Responsive Design */
+/* Media Queries for Responsive Design */
+@media (max-width: 576px) {
+    
+    html {
+      font-size: 50%;
+    }
+    .waktu h2 span {
+        margin: 0 5px; /* Jarak antara elemen */
+        padding: 15px 20px; }
+  
+  }

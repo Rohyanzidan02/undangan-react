@@ -1,0 +1,101 @@
+.container1 {
+    color: #f14e95; /* Change text color */
+    height: 100vh; /* Use viewport height for full screen */
+    width: 100vw; /* Use viewport width for full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Michroma", sans-serif;
+  }
+  
+  .loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #f14e95; /* Change text color */
+    padding: 20px; /* Add padding around the loading page */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+  }
+  
+  #svg {
+    height: 20vw; /* Responsive height based on viewport width */
+    width: 20vw; /* Responsive width based on viewport width */
+    stroke: #f14e95; /* Change stroke color */
+    fill-opacity: 0;
+    stroke-width: 4px; /* Increase stroke width for bolder icon */
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .container1 {
+    height: auto; /* Allow height to adjust based on content */
+    overflow: hidden;
+    text-align: center; /* Center the text */
+  }
+  
+  .text {
+    color: #f14e95; /* Change text color */
+    font-size: 3vw; /* Responsive font size based on viewport width */
+    letter-spacing: 2px; /* Adjust letter spacing */
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Add space below the logo name */
+    font-weight: bolder; /* Make text bolder */
+    font-family: 'Sacramento';
+  }
+  
+  h4 {
+    color: #f14e95; /* Change text color */
+    font-size: 4vw; /* Responsive font size based on viewport width */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Make the h2 text bold */
+    letter-spacing: 1px; /* Adjust letter spacing for h2 */
+    text-align: center; /* Center the h2 text */
+  }
+  
+  /* Media Queries for additional responsiveness */
+  @media (max-width: 768px) {
+    .text {
+      font-size: 6vw; /* Increase font size for smaller screens */
+    }
+  
+    h4 {
+      font-size: 5vw; /* Increase font size for smaller screens */
+    }
+  
+    #svg {
+      height: 25vw; /* Increase SVG size for smaller screens */
+      width: 25vw; /* Increase SVG size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text {
+      font-size: 8vw; /* Further increase font size for very small screens */
+    }
+  
+    h4 {
+      font-size: 6vw; /* Further increase font size for very small screens */
+    }
+  
+    #svg {
+      height: 30vw; /* Further increase SVG size for very small screens */
+      width: 30vw; /* Further increase SVG size for very small screens */
+    }
+  }

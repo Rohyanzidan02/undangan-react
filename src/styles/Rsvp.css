@@ -1,0 +1,59 @@
+.rsvp {
+    background-color: var(--bg);
+    padding: 20px; /* Tambahkan padding untuk ruang di sekitar konten */
+    border-radius: 8px; /* Tambahkan sudut melengkung untuk tampilan yang lebih halus */
+}
+
+
+.rsvp p {
+    color: white;
+    text-align: center; /* Pusatkan teks paragraf */
+}
+
+.rsvp form label {
+    color: white;
+    display: block; /* Buat label menjadi blok agar lebih mudah dibaca */
+    margin-bottom: 10px; /* Tambahkan jarak di bawah label */
+}
+
+.rsvp button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+    padding: 10px 20px; /* Tambahkan padding untuk tombol */
+    border-radius: 5px; /* Tambahkan sudut melengkung pada tombol */
+    cursor: pointer; /* Ubah kursor saat hover */
+    transition: background-color 0.3s, color 0.3s, border 0.3s; /* Tambahkan transisi untuk efek halus */
+}
+
+.rsvp button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid white;
+}
+
+/* Media Query untuk layar kecil */
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .rsvp {
+        padding: 15px; /* Kurangi padding pada layar kecil */
+    }
+
+    .rsvp h2 {
+        font-size: 3rem; /* Kecilkan ukuran font judul */
+    }
+
+    .rsvp p {
+        font-size: 1.2rem; /* Kecilkan ukuran font paragraf */
+    }
+
+    .rsvp form label {
+        font-size: 1rem; /* Kecilkan ukuran font label */
+    }
+
+    .rsvp button {
+        width: 100%; /* Buat tombol lebar penuh */
+        padding: 15px; /* Tambahkan padding untuk tombol */
+        font-size: 1.5rem; /* Besarkan ukuran font tombol */
+    }
+}

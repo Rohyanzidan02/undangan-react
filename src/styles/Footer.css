@@ -1,0 +1,48 @@
+.custom-footer {
+    background-color: #343a40; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+    padding: 40px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+  }
+  
+  .footer-container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .footer-block {
+    display: block; /* Make each small element a block */
+    margin-bottom: 10px; /* Space between text elements */
+    font-size: 0.9rem; /* Slightly smaller font size */
+  }
+  
+  .footer-icons {
+    list-style: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+    margin: 20px 0 0; /* Margin for spacing */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the icons */
+  }
+  
+  .footer-icons li {
+    margin: 0 15px; /* Space between icons */
+  }
+  
+  .footer-icons a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .footer-icons a:hover {
+    color: #ffc107; /* Change link color on hover */
+  }
+  
+  .footer-icons i {
+    font-size: 1.5rem; /* Increase icon size */
+    transition: transform 0.3s; /* Smooth transition for transform */
+  }
+  
+  .footer-icons i:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+  }

@@ -1,0 +1,72 @@
+/* Gallery.css */
+
+.gallery {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light background for contrast */
+  }
+  
+  .gallery .container {
+    max-width: 1200px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Center text in the container */
+  }
+  
+  
+  .gallery p {
+    font-size: 1.1rem; /* Slightly larger font for the description */
+    color: #666; /* Lighter text color */
+    margin-bottom: 40px; /* Space below the paragraph */
+    line-height: 1.6; /* Improve line height for readability */
+  }
+  
+  .row {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .col {
+    padding: 10px; /* Add padding around each column */
+  }
+  
+  .col img {
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    border: 2px solid transparent; /* Add a border for hover effect */
+  }
+  
+  .col img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    border-color: #007bff; /* Change border color on hover */
+  }
+  
+  .col a {
+    display: block; /* Make the anchor tag a block element */
+    position: relative; /* Position relative for pseudo-elements */
+  }
+  
+  .col a::after {
+    content: ''; /* Create a pseudo-element for overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    border-radius: 10px; /* Match image border radius */
+  }
+  
+  .col a:hover::after {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .gallery h2 {
+      font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+  
+    .gallery p {
+      font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+  }

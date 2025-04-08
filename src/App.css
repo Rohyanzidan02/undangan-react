@@ -1,0 +1,39 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+  background-color: white;
+}
+
+.home h2,
+.info h2, 
+.story h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-weight: bold;
+    font-size: 80px; /* Original font size */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 576px) {
+    .home h2,
+    .info h2, 
+    .story h2,
+    .gallery h2,
+    .rsvp h2,
+    .gifts h2 {
+        font-size: 40px; /* 50% of 80px */
+    }
+}

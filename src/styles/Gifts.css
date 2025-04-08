@@ -1,0 +1,63 @@
+.gifts {
+  padding: 50px 0;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.gifts .container {
+  max-width: 1200px; /* Limit the width of the container */
+}
+
+.bank-logos {
+  display: flex; /* Use flexbox to align logos side by side */
+  justify-content: center; /* Center logos horizontally */
+  gap: 40px; /* Increased space between logos */
+  flex-wrap: wrap; /* Allow logos to wrap on smaller screens */
+}
+
+.bank-logo {
+  width: 400px; /* Set a fixed width for the logos */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 1000px; /* Set a maximum height to ensure uniformity */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.bank-logo:hover {
+  transform: scale(1.05); /* Slightly enlarge the logo on hover */
+}
+
+.bank-logo:active {
+  transform: scale(0.95); /* Slightly shrink the logo when clicked */
+}
+
+.img-qr {
+  margin-top: 20px; /* Increased space above the QR code */
+  width: 150px; /* Set the width for the QR code to match the logos */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 1500px; /* Set a maximum height to ensure uniformity */
+  border: 1px solid #dee2e6; /* Border for the image */
+  border-radius: 0.5rem; /* Rounded corners for the image */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.img-qr:hover {
+  transform: scale(1.05); /* Slightly enlarge the QR code on hover */
+}
+
+.img-qr:active {
+  transform: scale(0.95); /* Slightly shrink the QR code when clicked */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .bank-logos {
+      flex-direction: column; /* Stack logos vertically */
+      align-items: center; /* Center logos in the column */
+  }
+
+  .bank-logo {
+      width: auto; /* Allow logos to adjust to container width */
+      max-width: 90%; /* Limit width for smaller screens */
+  }
+}
