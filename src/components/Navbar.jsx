@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../styles/Navbar.css';
 
 function Navbar() {
   useEffect(() => {
     const stickyTop = document.querySelector('.sticky-top');
-    const offcanvas = document.querySelector('.offcanvas');
+    const offcanvas = document.querySelector('#offcanvasNavbar'); // Menggunakan ID yang sama
 
     const handleShow = () => {
       stickyTop.style.overflow = 'visible';
@@ -25,14 +27,14 @@ function Navbar() {
   }, []); // Empty dependency array means this effect runs once on mount
 
   return (
-    <nav className="navbar navbar-expand-md bg-transparent fixed-top mynavbar">
+    <nav className="navbar navbar-expand-md sticky-top mynavbar">
       <div className="container">
         <a className="navbar-brand" href="#">Kris & Restiani</a>
         <button 
           className="navbar-toggler border-0" 
           type="button" 
           data-bs-toggle="offcanvas" 
-          data-bs-target="#offcanvasNavbar" 
+          data-bs-target="#offcanvasNavbar" // ID yang sama
           aria-controls="offcanvasNavbar" 
           aria-label="Toggle navigation"
         >
@@ -41,7 +43,7 @@ function Navbar() {
         <div 
           className="offcanvas offcanvas-end" 
           tabIndex="-1" 
-          id="offcanvasNavbar" 
+          id="offcanvasNavbar" // ID yang sama
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
@@ -58,8 +60,8 @@ function Navbar() {
               <a className="nav-link" href="#home">Home</a>
               <a className="nav-link" href="#info">Info</a>
               <a className="nav-link" href="#story">Story</a>
-              <a className="nav-link" href="#gallery">Galery</a>
-              <a className="nav-link" href="#rsvp">RSPV</a>
+              <a className="nav-link" href="#gallery">Gallery</a>
+              <a className="nav-link" href="#rsvp">RSVP</a>
               <a className="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>

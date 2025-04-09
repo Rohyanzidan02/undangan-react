@@ -1,21 +1,23 @@
+/* Navbar Styles */
 .mynavbar {
-    background-color: rgba(255, 255, 255, 0.3) !important;
-    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3) !important; /* Semi-transparent background */
+    backdrop-filter: blur(4px); /* Blur effect for the background */
+    z-index: 1000; /* Ensure it stays on top of other content */
 }
 
 .mynavbar .offcanvas {
-    height: 100vh;
+    height: 100vh; /* Full height for offcanvas */
 }
 
 .mynavbar .navbar-brand, 
 .mynavbar .offcanvas-title {
-    font-family: 'Sacramento', cursive;
-    font-size: 3.2rem;
-    font-weight: bold;
+    font-family: 'Sacramento', cursive; /* Custom font */
+    font-size: 3.2rem; /* Font size for desktop */
+    font-weight: bold; /* Bold font weight */
 }
 
 .mynavbar .nav-link {
-    text-transform: uppercase;
+    text-transform: uppercase; /* Uppercase text for nav links */
 }
 
 /* Mobile Styles */

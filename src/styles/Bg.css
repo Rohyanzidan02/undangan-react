@@ -98,6 +98,22 @@
     background-color: var(--pink); /* Change background on hover */
 }
 
+/* Button styles */
+.btn3 {
+    color: white; /* Text color for the button */
+    background-color: #ff69b4; /* Pink background color */
+    font-size: 1rem; /* Font size */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+.btn3:hover {
+    background-color: #ff1493; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
 
 
 @keyframes heartbeat {
@@ -112,12 +128,28 @@
 /* Media Queries for Responsive Design */
 /* Media Queries for Responsive Design */
 @media (max-width: 576px) {
-    
     html {
-      font-size: 50%;
+        font-size: 50%;
     }
+
     .waktu h2 span {
-        margin: 0 5px; /* Jarak antara elemen */
-        padding: 15px 20px; }
-  
-  }
+        margin: 0 5px; /* Space between elements */
+        padding: 15px 20px;
+    }
+
+    /* Adjust h1 for smaller screens */
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+        line-height: 1.2; /* Adjust line height for better spacing */
+        text-align: center; /* Center align text */
+    }
+
+    .hero h1 span {
+        display: block; /* Stack the names vertically */
+        font-size: 4rem; /* Adjust font size for each name */
+    }
+
+    .hero h1 span:nth-child(2) {
+        font-size: 3rem; /* Make the '&' larger if desired */
+    }
+}
