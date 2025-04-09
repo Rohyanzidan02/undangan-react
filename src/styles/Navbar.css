@@ -1,7 +1,7 @@
 /* Navbar Styles */
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3) !important; /* Semi-transparent background */
-    backdrop-filter: blur(4px); /* Blur effect for the background */
+    
     z-index: 1000; /* Ensure it stays on top of other content */
 }
 
