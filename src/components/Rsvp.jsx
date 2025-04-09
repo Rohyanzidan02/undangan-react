@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Rsvp.css';
 
 const Rsvp = () => {
-  
+  const [status, setStatus] = useState(''); // State to manage the selected status
+
   useEffect(() => {
     const form = document.getElementById('my-form');
     form.addEventListener("submit", function(e) {
@@ -59,8 +60,14 @@ const Rsvp = () => {
         <div className="col-12">
           <div className="mb-3">
             <label htmlFor="status" className="form-label">Konfirmasi Kehadiran</label>
-            <select name="status" id="status" className="form-select">
-              <option selected>Pilih salah satu</option>
+            <select 
+              name="status" 
+              id="status" 
+              className="form-select" 
+              value={status} // Use value prop to control the selected option
+              onChange={(e) => setStatus(e.target.value)} // Update state on change
+            >
+              <option value="">Pilih salah satu</option>
               <option value="Hadir">Hadir</option>
               <option value="Tidak Hadir">Tidak Hadir</option>
             </select>
