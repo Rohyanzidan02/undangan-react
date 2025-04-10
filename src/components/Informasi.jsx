@@ -5,7 +5,7 @@ function Informasi() {
   return (
     <section id="info" className="info">
       <div className="container">
-      <Fade direction='up' delay={300} triggerOnce={true} cascade={false}>
+      <Fade direction='up' delay={300} triggerOnce={true} cascade={true}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>

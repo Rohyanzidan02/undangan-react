@@ -91,6 +91,7 @@ function Bg() {
         backgroundPosition: 'center',
       }}
     >
+      
       <main>
         <h4>
           Kepada <span>{`${pronoun} ${guestName},`}</span>
