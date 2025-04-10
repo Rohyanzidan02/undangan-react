@@ -15,7 +15,7 @@ function Home() {
     <>
       <Bg />
       <Navbar />
-      <Header style={{ marginTop: '20px' }} /> {/* Adjust margin as needed */}
+      <Header />
       <Informasi />
       <Story />
       <Gallery />
