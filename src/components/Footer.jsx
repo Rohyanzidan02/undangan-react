@@ -8,7 +8,7 @@ function CustomFooter() {
           <div className="footer-col text-center">
             <small className="footer-block">&copy; Muhammad Rohyan Zidan 2025. All Rights Reserved.</small>
             <small className="footer-block">
-              Design by <a href="https://instagram.com/sandhikagalih">@rohyanvanbjir</a>.
+              Design by <a href="https://instagram.com/">@rohyanvanbjir</a>.
             </small>
 
             <ul className="footer-icons">
