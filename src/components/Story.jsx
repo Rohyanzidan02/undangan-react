@@ -2,11 +2,13 @@ import '../styles/Story.css';
 import gambar1 from '../assets/1.jpg';
 import gambar2 from '../assets/2.jpg';
 import gambar3 from '../assets/3.jpg';
+import { Fade } from 'react-awesome-reveal';
 
 function Story() {
   return (
     <section id="story" className="story">
       <div className="container">
+      <Fade direction='up' delay={300} triggerOnce={true} cascade={false}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-10 text-center">
             <span>Kisah Pengantin</span>
@@ -72,6 +74,7 @@ function Story() {
             </ul>
           </div>
         </div>
+        </Fade>
       </div>
     </section>
   );

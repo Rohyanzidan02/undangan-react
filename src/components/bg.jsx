@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Bg.css';
 import bg1 from '../assets/bg1.jpg';
 import Audio from '../assets/audio/kda.mp3';
+import { Fade } from 'react-awesome-reveal';
 
 function Bg() {
   const weddingDate = new Date('2025-05-30T18:00:00'); // Set your wedding date and time here

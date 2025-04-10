@@ -2,11 +2,13 @@ import '../styles/Gifts.css'; // Adjust the path as necessary for your styles
 import sw from '../assets/saweria.png';
 import BCA from '../assets/bca.png';
 import OCBC from '../assets/ocbc.png';
+import { Fade } from 'react-awesome-reveal';
 
 const Gifts = () => {
   return (
     <section id="gifts" className="gifts">
       <div className="container">
+      <Fade direction='up' delay={300} triggerOnce={true} cascade={false}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-10 text-center">
             <span>Ungkapan Tanda Kasih</span>
@@ -32,6 +34,7 @@ const Gifts = () => {
             </ul>
           </div>
         </div>
+        </Fade>
       </div>
     </section>
   );

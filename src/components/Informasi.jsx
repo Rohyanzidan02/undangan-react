@@ -1,9 +1,11 @@
 import '../styles/Informasi.css';
+import { Fade } from 'react-awesome-reveal';
 
 function Informasi() {
   return (
     <section id="info" className="info">
       <div className="container">
+      <Fade direction='up' delay={300} triggerOnce={true} cascade={false}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
@@ -83,6 +85,7 @@ function Informasi() {
             </div>
           </div>
         </div>
+        </Fade>
       </div>
     </section>
   );

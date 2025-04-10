@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Rsvp.css';
 
+import { Fade } from 'react-awesome-reveal';
+
 const Rsvp = () => {
   const [status, setStatus] = useState(''); // State to manage the selected status
 
@@ -34,6 +36,7 @@ const Rsvp = () => {
   return (
     <section id="rsvp" className="rsvp">
       <div className="container">
+      <Fade direction='up' delay={300} triggerOnce={true} cascade={false}>
         <div className="row justify-content-center">
           <div className="col-md-8 col-10 text-center">
             <h2>Konfirmasi Kehadiran</h2>
@@ -95,6 +98,7 @@ const Rsvp = () => {
           </div>
         </div>
 
+              </Fade>
       </div>
     </section>
   );
