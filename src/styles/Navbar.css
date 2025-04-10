@@ -1,8 +1,10 @@
 /* Navbar Styles */
 .mynavbar {
     background-color: rgba(255, 255, 255, 0.3) !important; /* Semi-transparent background */
-    
+    backdrop-filter: blur(10px); /* Apply blur effect */
     z-index: 1000; /* Ensure it stays on top of other content */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .mynavbar .offcanvas {
@@ -22,9 +24,13 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .mynavbar {
+        padding: 0; /* Remove padding to prevent overflow */
+    }
+
     .mynavbar .navbar-brand, 
     .mynavbar .offcanvas-title {
-        font-size: 2.5rem; /* Smaller font size for mobile */
+        font-size: 3rem; /* Smaller font size for mobile */
     }
 
     .mynavbar .nav-link {

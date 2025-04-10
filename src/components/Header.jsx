@@ -1,10 +1,11 @@
 import '../styles/Header.css';
-import krisImage from '../assets/kris.jpeg'; // Pastikan path ini benar
-import nengImage from '../assets/neng.jpeg'; // Pastikan path ini benar
+import krisImage from '../assets/kris.jpeg'; // Ensure this path is correct
+import nengImage from '../assets/neng.jpeg'; // Ensure this path is correct
+import BG from '../assets/bg.png'; // Ensure this path is correct
 
 function Header() {
   return (
-    <section id="home" className="home">
+    <section id="home" className="home bg-image">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-8 text-center">

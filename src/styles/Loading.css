@@ -57,7 +57,7 @@
     text-transform: uppercase;
     margin-bottom: 10px; /* Add space below the logo name */
     font-weight: bolder; /* Make text bolder */
-    font-family: 'Sacramento';
+    font-family: "Concert One", sans-serif;
   }
   
   h4 {

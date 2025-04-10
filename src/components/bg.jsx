@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Bg.css';
 import bg1 from '../assets/bg1.jpg';
-import { Link } from 'react-router-dom';
+import Audio from '../assets/audio/kda.mp3';
 
 function Bg() {
   const weddingDate = new Date('2025-05-30T18:00:00'); // Set your wedding date and time here
   const [timeRemaining, setTimeRemaining] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [guestName, setGuestName] = useState('');
   const [pronoun, setPronoun] = useState('Bapak/Ibu/Saudara/i');
+  const audioRef = useRef(null); // Create a ref for the audio element
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,6 +60,7 @@ function Bg() {
     enableScroll(); // Enable scrolling
     const homeSection = document.getElementById('home'); // Change to 'home'
     if (homeSection) {
+      audioRef.current.play(); // Play the audio when the button is clicked
       homeSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the home section
     }
   };
@@ -109,6 +111,9 @@ function Bg() {
         <button className="btn3 btn-lg mt-4" onClick={handleScrollToHome}>
           Lihat undangan
         </button>
+        
+        {/* Audio Element */}
+        <audio ref={audioRef} src={Audio} preload="auto" />
       </main>
     </section>
   );

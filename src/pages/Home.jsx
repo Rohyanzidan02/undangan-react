@@ -8,7 +8,7 @@ import Gallery from "../components/Gallery";
 import Rsvp from "../components/Rsvp";
 import Gifts from "../components/Gifts";
 import Footer from "../components/Footer";
-// import Audio from "../components/Audio";
+import Icon from "../components/icon";
 
 function Home() {
   return (
@@ -22,7 +22,7 @@ function Home() {
       <Rsvp />
       <Gifts />
       <Footer />
-      {/* <Audio /> */}
+      <Icon />
       
     </>
   );
