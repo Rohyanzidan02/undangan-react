@@ -8,7 +8,7 @@ import Gallery from "../components/Gallery";
 import Rsvp from "../components/Rsvp";
 import Gifts from "../components/Gifts";
 import Footer from "../components/Footer";
-import Icon from "../components/icon";
+import Icon from "../components/Icon";
 
 function Home() {
   return (
